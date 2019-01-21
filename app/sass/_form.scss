@@ -1,0 +1,75 @@
+/* ! == FORM ==*/
+.form-group {
+    margin: 0 -5px;
+    overflow: hidden;
+    .block-input {
+        width: 50%;
+        float: left;
+        padding: 0 5px;
+        margin-bottom: 10px;
+        input {
+            height: 59px;
+            line-height: 58px;
+        }
+    }
+}
+.block-input input, .block-message textarea {
+    background: #fff;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: $default-font;
+    color: #000;
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0 10px 0 20px;
+}
+.block-input
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    input {
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.block-message {
+    textarea {
+        text-align: left;
+        min-height: 130px;
+        max-height: 130px;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 10px 10px 10px 20px;
+    }
+}
+::-webkit-input-placeholder
+{
+    font-size: 1.4rem;
+    font-family: $default-font;
+    color: #858585;
+    opacity: 1;
+}
+:-moz-placeholder
+{
+    font-size: 1.4rem;
+    font-family: $default-font;
+    color: #858585;
+    opacity: 1;
+}
+::-moz-placeholder
+{
+    font-size: 1.4rem;
+    font-family: $default-font;
+    color: #858585;
+    opacity: 1;
+}
+:-ms-input-placeholder
+{
+    font-size: 1.4rem;
+    font-family: $default-font;
+    color: #858585;
+    opacity: 1;
+}

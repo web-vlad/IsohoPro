@@ -1,0 +1,134 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$s-email-name: 's-email';
+$s-email-x: 68px;
+$s-email-y: 25px;
+$s-email-offset-x: -68px;
+$s-email-offset-y: -25px;
+$s-email-width: 16px;
+$s-email-height: 11px;
+$s-email-total-width: 92px;
+$s-email-total-height: 64px;
+$s-email-image: 'sprite.png';
+$s-email: (68px, 25px, -68px, -25px, 16px, 11px, 92px, 64px, 'sprite.png', 's-email', );
+$s-insta-name: 's-insta';
+$s-insta-x: 0px;
+$s-insta-y: 0px;
+$s-insta-offset-x: 0px;
+$s-insta-offset-y: 0px;
+$s-insta-width: 40px;
+$s-insta-height: 40px;
+$s-insta-total-width: 92px;
+$s-insta-total-height: 64px;
+$s-insta-image: 'sprite.png';
+$s-insta: (0px, 0px, 0px, 0px, 40px, 40px, 92px, 64px, 'sprite.png', 's-insta', );
+$s-list-name: 's-list';
+$s-list-x: 41px;
+$s-list-y: 0px;
+$s-list-offset-x: -41px;
+$s-list-offset-y: 0px;
+$s-list-width: 26px;
+$s-list-height: 26px;
+$s-list-total-width: 92px;
+$s-list-total-height: 64px;
+$s-list-image: 'sprite.png';
+$s-list: (41px, 0px, -41px, 0px, 26px, 26px, 92px, 64px, 'sprite.png', 's-list', );
+$s-price-name: 's-price';
+$s-price-x: 0px;
+$s-price-y: 41px;
+$s-price-offset-x: 0px;
+$s-price-offset-y: -41px;
+$s-price-width: 26px;
+$s-price-height: 23px;
+$s-price-total-width: 92px;
+$s-price-total-height: 64px;
+$s-price-image: 'sprite.png';
+$s-price: (0px, 41px, 0px, -41px, 26px, 23px, 92px, 64px, 'sprite.png', 's-price', );
+$s-translator-name: 's-translator';
+$s-translator-x: 68px;
+$s-translator-y: 0px;
+$s-translator-offset-x: -68px;
+$s-translator-offset-y: 0px;
+$s-translator-width: 24px;
+$s-translator-height: 24px;
+$s-translator-total-width: 92px;
+$s-translator-total-height: 64px;
+$s-translator-image: 'sprite.png';
+$s-translator: (68px, 0px, -68px, 0px, 24px, 24px, 92px, 64px, 'sprite.png', 's-translator', );
+$spritesheet-width: 92px;
+$spritesheet-height: 64px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($s-email, $s-insta, $s-list, $s-price, $s-translator, );
+$spritesheet: (92px, 64px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
