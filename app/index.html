@@ -48,8 +48,8 @@
                             <a class="b-email__item b-email__link" href="mailto:support@isohopro.ru">support@isohopro.ru</a><br />
                             <span class="b-email__item b-email__desc">служба поддержки</span>
                         </div>
-                        <div class="b-instagram b-instagram--header">
-                            <a class="link-insta" href="tg://resolve?domain=nikname">IsohoPro</a>
+                        <div class="b-telegram b-telegram--header">
+                            <a class="link-telegram" href="tg://resolve?domain=nikname">IsohoPro</a>
                         </div>
                         <div class="block-button">
                             <a class="button-menu" rel="nofollow" href="#"><span></span><div class="menu-fader">меню</div></a>
@@ -126,7 +126,7 @@
                 <div class="config-list config-list--1 row">
 
                     <!-- begin config item -->
-                    <div class="col">
+                    <div class="col fadeInUp wow animated">
                         <div class="config-item">
                             <div class="config-item__header">
                                 <h3 class="config-item__title">Название тарифа</h3>
@@ -199,7 +199,7 @@
                     </div>
                     <!-- end config item -->
                     <!-- begin config item -->
-                    <div class="col">
+                    <div class="col fadeInUp wow animated">
                         <div class="config-item">
                             <div class="config-item__header">
                                 <h3 class="config-item__title">Название тарифа</h3>
@@ -272,7 +272,7 @@
                     </div>
                     <!-- end config item -->
                     <!-- begin config item -->
-                    <div class="col">
+                    <div class="col fadeInUp wow animated">
                         <div class="config-item">
                             <div class="config-item__header">
                                 <h3 class="config-item__title">Название тарифа</h3>
@@ -345,7 +345,7 @@
                     </div>
                     <!-- end config item -->
                     <!-- begin config item -->
-                    <div class="col">
+                    <div class="col fadeInUp wow animated">
                         <div class="config-item">
                             <div class="config-item__header">
                                 <h3 class="config-item__title">Название тарифа</h3>
@@ -751,7 +751,7 @@
                                         <label class="check__wrapp" for="system_1">
                                             <input class="check__type" type="radio" id="system_1" name="os" checked="checked" value="windows" />
                                             <span class="check__custom"></span>
-                                            <span class="check__label"><img src="img/os_2-1.jpg" alt="#" /></span>
+                                            <span class="check__label"><img src="img/os_1.jpg" alt="#" /></span>
                                         </label>
                                     </div>
                                 </li>
@@ -763,7 +763,7 @@
                                         <label class="check__wrapp" for="system_2">
                                             <input class="check__type" type="radio" id="system_2" name="os" value="linux" />
                                             <span class="check__custom"></span>
-                                            <span class="check__label"><img src="img/os_2-2.jpg" alt="#" /></span>
+                                            <span class="check__label"><img src="img/os_2.jpg" alt="#" /></span>
                                         </label>
                                     </div>
                                 </li>
@@ -775,7 +775,7 @@
                                         <label class="check__wrapp" for="system_3">
                                             <input class="check__type" type="radio" id="system_3" name="os" value="bitrix" />
                                             <span class="check__custom"></span>
-                                            <span class="check__label"><img src="img/os_2-3.jpg" alt="#" /></span>
+                                            <span class="check__label"><img src="img/os_3.jpg" alt="#" /></span>
                                         </label>
                                     </div>
                                 </li>
@@ -908,30 +908,10 @@
 
                                     <!-- BEGIN BLOCK CHECKED-->
                                     <div class="group-checked row">
-                                        <div class="calculator__checked col">
+
+                                        <!-- BEGIN CHECKED SUPPORT -->
+                                        <div class="calculator-checked calculator-checked--support col">
                                             <strong class="calculator__title">ТИП ПОДДЕРЖКИ</strong>
-                                            <!--<ul class="calculator-checkboxes checkboxes">
-
-                                                <li class="calculator-check__item">
-                                                    <div class="check">
-                                                        <label class="check__wrapp" for="standart">
-                                                            <input class="check__type" type="radio" id="standart" name="sappot" checked="checked" value="standart" />
-                                                            <span class="check__custom"></span>
-                                                            <span class="check__label">Стандарт</span>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                                <li class="calculator-check__item">
-                                                    <div class="check">
-                                                        <label class="check__wrapp" for="premium">
-                                                            <input class="check__type" type="radio" id="premium" name="sappot" value="premium" />
-                                                            <span class="check__custom"></span>
-                                                            <span class="check__label">Премиум</span>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                            </ul> -->
-
                                             <ul class="checked__list checkboxes support">
                                                 <li class="calculator-check__item">
                                                     <div class="check">
@@ -952,18 +932,19 @@
                                                     </div>
                                                 </li>
                                             </ul>
-
                                         </div>
+                                        <!-- END CHECKED SUPPORT -->
 
-                                        <div class="calculator__checked col">
-                                            <strong class="calculator__title">ТИП ПОДДЕРЖКИ</strong>
+                                        <!-- BEGIN CHECKED TERM -->
+                                        <div class="calculator-checked calculator-checked--term col">
+                                            <strong class="calculator__title">СРОК ОПЛАТЫ</strong>
                                             <ul class="checked__list checkboxes buy">
                                                 <li class="calculator-check__item">
                                                     <div class="check">
                                                         <label class="check__wrapp">
                                                             <input class="check__type checked-radio" subname="1 месяц" month="1" price="1" checked="checked" type="radio" name="billingcycle" value="monthly" />
                                                             <span class="check__custom"></span>
-                                                            <span class="check__label">1 месяц</span>
+                                                            <span class="check__label">1 мес<span>яц</span></span>
                                                         </label>
                                                     </div>
                                                 </li>
@@ -972,7 +953,7 @@
                                                         <label class="check__wrapp">
                                                             <input class="check__type checked-radio" subname="3 месяца" month="3" price="0.95" type="radio" name="billingcycle" value="quarterly">
                                                             <span class="check__custom"></span>
-                                                            <span class="check__label">3 месяца</span>
+                                                            <span class="check__label">3 мес<span>яца</span></span>
                                                         </label>
                                                     </div>
                                                 </li>
@@ -981,7 +962,7 @@
                                                         <label class="check__wrapp">
                                                             <input class="check__type checked-radio" subname="6 месяцев" month="6" price="0.9" type="radio" name="billingcycle" value="semiannually">
                                                             <span class="check__custom"></span>
-                                                            <span class="check__label">6 месяцев</span>
+                                                            <span class="check__label">6 мес<span>яцев</span></span>
                                                         </label>
                                                     </div>
                                                 </li>
@@ -990,15 +971,16 @@
                                                         <label class="check__wrapp">
                                                             <input class="check__type checked-radio" subname="12 месяцев" month="12" price="0.8" type="radio" name="billingcycle" value="annually">
                                                             <span class="check__custom"></span>
-                                                            <span class="check__label">12 месяцев</span>
+                                                            <span class="check__label">12 мес<span>яцев</span></span>
                                                         </label>
                                                     </div>
                                                 </li>
                                             </ul>
-
                                         </div>
+                                        <!-- END CHECKED TERM -->
                                     </div>
-                                    <input type="radio" checked="checked" name="pid" value="34" hidden="">
+
+                                    <input type="radio" checked="checked" name="pid" value="34" hidden="" />
                                     <!-- END BLOCK CHECKED-->
 
                                 </form>
@@ -1011,19 +993,30 @@
                         <!--  BDIGN CALCULATOR ASIDE -->
                         <div class="aside-calculat col">
                             <div class="config__amount text-center">
-                                <div class="amount__title">Р¦РµРЅР° Р·Р° РјРµСЃСЏС†</div>
-                                <div class="amount__price"><span>2032</span> <small>СЂСѓР±.</small></div>
-                                <div class="amount__sale d-flex">
-                                    <div class="amount__sale-title flex-fill text-md-left text-right">Р’Р°С€Р° СЃРєРёРґРєР°</div>
-                                    <div class="amount__sale-percent flex-fill text-md-right text-left"><span>0</span>%</div>
+                                <div class="amount-sale">
+                                    <div class="amount-sale__item amount-sale__title">скидка</div>
+                                    <div class="amount-sale__item amount__sale-percent"><span>0</span>%</div>
                                 </div>
-                                <a href="javascript:void(0);" data-toggle="modal" data-target=".config-modal" class="amount__btn btn-order calc-form-open">Р—РђРљРђР—РђРўР¬</a>
-                                <a href="javascript:void(0);" onclick="ym(19778725, 'reachGoal', 'target_test_drive_glavnya'); return true;" data-toggle="modal" data-target=".config-modal" class="amount__btn btn-test calc-form-open"><span>РҐРѕС‡Сѓ С‚РµСЃС‚-РґСЂР°Р№РІ</span></a>
-                                <ul class="amount__info">
-                                    <li>Р‘РµСЃРїР»Р°С‚РЅРѕ</li>
-                                    <li>Р›СЋР±РѕР№ С‚Р°СЂРёС„</li>
-                                    <li id="lololololo">Р”Рѕ 7 РґРЅРµР№</li>
-                                </ul>
+                                <div class="amount-prices">
+                                    <strong class="amount-price__title">Стоимость 1 месяц</strong>
+                                    <div class="amount__price"><span>2032</span> &#8381;</div>
+                                </div>
+
+                                <div class="amount-button row">
+                                    <div class="col">
+                                        <a class="btn" href="#" rel="nofollow" data-reveal-id="window-call" data-dismissmodalclass="close-reveal-modal">Заказать</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="btn btn--2" href="#" rel="nofollow" data-reveal-id="window-call-2" data-dismissmodalclass="close-reveal-modal">хочу тест драйв</a>
+                                    </div>
+                                </div>
+
+                                <div class="amount-info">
+                                    <span class="amount-info__icon">!</span>
+                                    <span class="amount-info__text">
+                                        Бесплатно<br /> любой тариф<br /> до 7 дней
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <!--  END CALCULATOR ASIDE -->
@@ -1034,64 +1027,129 @@
         </div>
         <!-- END CALCULATOR -->
 
-        <!-- BEGIN SECTION CONTACTS -->
-        <div id="contact" class="sectionContact">
+        <!-- BEGIN BLOCK ADVANTAGES -->
+        <div class="b-advantages">
             <div class="siteWidth">
-                <strong class="title">Контакты</strong>
+                <h2 class="title">Наши преимущества</h2>
 
-                <div class="block-map">
-                    <div class="box-map">
-                        <div id="map"></div>
+                <div class="list-advantages row">
+                    <div class="col fadeInLeft wow animated">
+                        <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                <img src="img/icons/ico_1.png" alt="#" />
+                            </div>
+                            <div class="item-advantages__text">
+                                <p class="item-advantages__desc">тестовый период<br /> <strong>7 дней</strong></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="map-img">
-                        <!--<div class="map-img__img"></div>-->
+                    <div class="col fadeInUp wow animated">
+                        <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                <img src="img/icons/ico_2.png" alt="#" />
+                            </div>
+                            <div class="item-advantages__text">
+                                <p class="item-advantages__desc"><strong>дата-центр</strong> высокого<br /> и надежного уровня</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col fadeInUp wow animated">
+                        <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                <img src="img/icons/ico_3.png" alt="#" />
+                            </div>
+                            <div class="item-advantages__text">
+                                <p class="item-advantages__desc"><strong>техподдержка</strong> и<br /> аутсорсинг клиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col fadeInRight wow animated">
+                        <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                <img src="img/icons/ico_4.png" alt="#" />
+                            </div>
+                            <div class="item-advantages__text">
+                                <p class="item-advantages__desc"><strong>VPN, DoubleVPN</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col fadeInLeft wow animated">
+                        <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                <img src="img/icons/ico_5.png" alt="#" />
+                            </div>
+                            <div class="item-advantages__text">
+                                <p class="item-advantages__desc">скорость интернет-канала на<br /> всех тарифных планах <strong>1Gb/s</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col fadeInDown wow animated">
+                        <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                <img src="img/icons/ico_6.png" alt="#" />
+                            </div>
+                            <div class="item-advantages__text">
+                                <p class="item-advantages__desc"><strong>бесплатное</strong> обучение</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col fadeInDown wow animated">
+                        <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                <img src="img/icons/ico_7.png" alt="#" />
+                            </div>
+                            <div class="item-advantages__text">
+                                <p class="item-advantages__desc"><strong>неограниченный</strong> трафик</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col fadeInRight wow animated">
+                        <div class="item-advantages">
+                            <div class="item-advantages__img">
+                                <img src="img/icons/ico_8.png" alt="#" />
+                            </div>
+                            <div class="item-advantages__text">
+                                <p class="item-advantages__desc"><strong>помощь</strong> в переезде</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- BEGIN BLOCK CONTACT DATA -->
-                <div class="map-contact">
-                    <div class="row">
-                        <div class="map-contact__one col">
-                            <p class="map-contact__address map-contact__address--one">
-                                Адрес: <strong>Václavské náměstí, 48</strong><br />
-                            </p>
-                            <p class="map-contact__address">
-                                Centrum Pojištění Cizinců – Foreigners´ Insurance Center s.r.o.<br />
-                                <span>IČ: 063 63 521</span>
-                            </p>
-                        </div>
-                        <div class="map-contact__second col">
-                            <div class="map-contact__group">
-                                <div class="map-contact__phone">
-                                    <a class="tel" href="tel:+420778518187"><small>+420</small> 778 518 187</a>
+            </div>
+        </div>
+        <!-- END BLOCK ADVANTAGES -->
+
+        <!-- BEGIN SECTION CONTACTS -->
+        <div class="b-contact">
+            <div class="siteWidth">
+                <div class="row">
+                    <div class="b-contact__img col">
+                        <img src="img/contact_bg.jpg" alt="#" />
+                    </div>
+                    <div class="b-contact__content col">
+                        <div class="b-form">
+                            <strong class="title">Остались вопросы? Напишите нам!</strong>
+                            <form action=""  name="call-form" class="modal-form call-form" method="post">
+                                <div class="form-group">
+                                    <div class="block-input">
+                                        <input type="text" name="name" placeholder="Имя"  required />
+                                    </div>
+                                    <div class="block-input">
+                                        <input type="tel" name="phone" placeholder="Телефон" required />
+                                    </div>
+                                    <div class="block-input">
+                                        <input type="email" name="email" placeholder="Email" required />
+                                    </div>
                                 </div>
-                            </div>
-                            <ul class="map-contact__link">
-                                <li>
-                                    <span>email:</span>
-                                    <a class="email" href="mailto:info@pojistenicizincu.cz">info@pojistenicizincu.cz</a>
-                                </li>
-                                <li>
-                                    <span>skype:</span>
-                                    <a href="skype:pojistenicizincu.cz">pojistenicizincu.cz</a>
-                                </li>
-                            </ul>
+                                <div class="block-input block-message">
+                                    <textarea name="message" placeholder="Сообщение:"></textarea>
+                                </div>
+                                <button class="btn" type="submit">Отправить</button>
+                                <input type="hidden" name="contact" />
+                            </form>
                         </div>
-
-                        <div class="map-contact__third col">
-                            <div class="map-time">
-                                <strong class="map-time__title">Часы работы:</strong>
-                                <p class="map-time__desc">
-                                    Пн-Пт.  <strong>09:00 - 18:00</strong><br />
-                                    Сб.  <strong>10:00 - 14:00</strong>, Вс. -  выходной
-                                </p>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-                <!-- END BLOCK CONTACT DATA -->
-
             </div>
         </div>
         <!-- END SECTION CONTACTS -->
@@ -1102,18 +1160,146 @@
 
     <!-- BEGIN FOOTER -->
     <div class="footer">
-        <div class="siteWidth">
-            <div class="footer-one row">
-                <div class="footer-copy col">
-                    <p class="copy">
-                        Vaclavak48.cz<br /> &copy; All right reserved
-                    </p>
+        <div class="footer-one">
+            <div class="siteWidth">
+                <div class="row row--footer">
+
+                    <div class="footer-logo col">
+                        <div class="logo">
+                            <div class="logo__img">
+                                <img src="img/logo.png" alt="#" />
+                            </div>
+                            <div class="logo__text">
+                                <strong class="logo__title">IsohoPro</strong>
+                                <span  class="logo__desc">виртуальный cloud сервер</span>
+                            </div>
+                        </div>
+                        <p class="copy">&copy; 2018 IsohoPro. All rights reserved</p>
+                    </div>
+
+                    <div class="footer-menu col">
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#">Услуги</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Выделенный удаленный сервер 1С</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Виртуальный рабочий стол Windows</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Готовые решения</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">VPN / Proxy</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav">
+                            <li>
+                                <a href="#">Телеграм-боты</a>
+                            </li>
+                            <li>
+                                <a href="#">Решения</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Магазин</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-social col">
+                        <div class="footer-social__wrapp">
+                            <div class="b-email b-email--footer">
+                                <a class="b-email__item b-email__link" href="mailto:info@isohopro.ru">info@isohopro.ru</a><br />
+                                <a class="b-email__item b-email__link" href="mailto:support@isohopro.ru">support@isohopro.ru</a><br />
+                                <span class="b-email__item b-email__desc">служба поддержки</span>
+                            </div>
+                            <div class="b-telegram b-telegram--footer">
+                                <a class="link-telegram" href="tg://resolve?domain=nikname">IsohoPro</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
+        </div>
+        <div class="footer-second">
+            <div class="siteWidth">
+                <a class="link-studio" href="https://design-online.cz/">Web created Design-online.cz</a>
+            </div>
         </div>
     </div>
     <!-- END FOOTER -->
+
+
+    <!-- BEGIN MODAL -->
+    <div class="order-phone-modal reveal-modal" id="window-call">
+        <div class="wrapp-modal">
+            <span class="close-popap close-reveal-modal">X</span>
+            <div class="box-form box-form-modal">
+                <strong class="modal-title">Заказать</strong>
+                <form action=""  name="call-form" class="modal-form call-form" method="post">
+                    <div class="block-input">
+                        <input type="text" name="name" placeholder="Имя*:"  required />
+                    </div>
+                    <div class="block-input">
+                        <input type="tel" name="phone" placeholder="Телефон*:" required />
+                    </div>
+                    <div class="block-input">
+                        <input type="email" name="email" placeholder="Email*:" required />
+                    </div>
+                    <div class="block-input block-message">
+                        <textarea name="message" placeholder="Сообщение:"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Отправить</button>
+                    <input type="hidden" name="order-call" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-phone-modal reveal-modal" id="window-call-2">
+        <div class="wrapp-modal">
+            <span class="close-popap close-reveal-modal">X</span>
+            <div class="box-form box-form-modal">
+                <strong class="modal-title">Тест драйв</strong>
+                <form action=""  name="call-form" class="modal-form call-form" method="post">
+                    <div class="block-input">
+                        <input type="text" name="name" placeholder="Имя*:"  required />
+                    </div>
+                    <div class="block-input">
+                        <input type="tel" name="phone" placeholder="Телефон*:" required />
+                    </div>
+                    <div class="block-input">
+                        <input type="email" name="email" placeholder="Email*:" required />
+                    </div>
+                    <div class="block-input block-message">
+                        <textarea name="message" placeholder="Сообщение:"></textarea>
+                    </div>
+                    <button class="btn" type="submit">Отправить</button>
+                    <input type="hidden" name="order-call-2" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="thanks reveal-modal" id="thanks">
+        <span class="close-popap close-reveal-modal">X</span>
+        <div class="wrapp-modal">
+            <div class="wrapp-thanks">
+                <p>
+                    <strong>Спасибо за сообщение,<br /> Наш менеджер свяжется с Вами</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL -->
 
 
 
@@ -1121,6 +1307,7 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.form-min.js?version=1"></script>
+    <script type="text/javascript" src="js/wow.min.js?version=1"></script>
     <script type="text/javascript" src="js/scripts.min.js?version=1"></script>
     <script type="text/javascript" src="js/common.js?version=1"></script>
 

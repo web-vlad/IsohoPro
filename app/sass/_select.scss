@@ -1,11 +1,9 @@
 /* ! -- select -- */
 .selectbox {
     position: relative;
-    width: 100%;
-    /*display: block !important;*/
+    display: block !important;
     vertical-align: middle;
     cursor: pointer;
-    display: none;
     .select {
         background: #fff;
         width: 100%;

@@ -1,16 +1,19 @@
 /* ! == FORM ==*/
 .form-group {
-    margin: 0 -5px;
-    overflow: hidden;
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    margin: 0 -7px;
+    /*(overflow: hidden;*/
     .block-input {
-        width: 50%;
-        float: left;
-        padding: 0 5px;
-        margin-bottom: 10px;
-        input {
-            height: 59px;
-            line-height: 58px;
-        }
+        /*width: 33.3333%;
+        float: left;*/
+        /*flex-basis: 200px;
+        -webkit-flex-basis: 200px;
+        -ms-flex-preferred-size: 200px;*/
+        max-width: 33.3333%;
+        padding: 0 7px;
     }
 }
 .block-input input, .block-message textarea {
@@ -18,58 +21,53 @@
     font-weight: 400;
     font-size: 1.4rem;
     font-family: $default-font;
-    color: #000;
+    color: #5896cc;
     display: block;
     width: 100%;
     border: none;
-    padding: 0 10px 0 20px;
+    padding: 0 10px 0 17px;
 }
 .block-input
 {
     position: relative;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
     input {
-        height: 40px;
-        line-height: 40px;
+        height: 43px;
+        line-height: 43px;
     }
 }
-
 .block-message {
     textarea {
         text-align: left;
-        min-height: 130px;
-        max-height: 130px;
+        min-height: 67px;
+        max-height: 67px;
         min-width: 100%;
         max-width: 100%;
-        padding: 10px 10px 10px 20px;
+        padding: 10px 10px 10px 17px;
     }
 }
-::-webkit-input-placeholder
-{
+::-webkit-input-placeholder {
     font-size: 1.4rem;
     font-family: $default-font;
-    color: #858585;
+    color: #5896cc;
     opacity: 1;
 }
-:-moz-placeholder
-{
+:-moz-placeholder {
     font-size: 1.4rem;
     font-family: $default-font;
-    color: #858585;
+    color: #5896cc;
     opacity: 1;
 }
-::-moz-placeholder
-{
+::-moz-placeholder {
     font-size: 1.4rem;
     font-family: $default-font;
-    color: #858585;
+    color: #5896cc;
     opacity: 1;
 }
-:-ms-input-placeholder
-{
+:-ms-input-placeholder {
     font-size: 1.4rem;
     font-family: $default-font;
-    color: #858585;
+    color: #5896cc;
     opacity: 1;
 }

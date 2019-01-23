@@ -119,6 +119,12 @@
     -ms-flex-align: center;
     align-items: center;
 }
+@mixin width-full() {
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    max-width: 100%;
+}
 
 /* ! == ANIME ==*/
 @mixin anim-img() {

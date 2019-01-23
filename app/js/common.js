@@ -1,6 +1,9 @@
 
 $(document).ready(function() {
 
+    // ANIMATION
+    new WOW().init();
+
    /* // Menu Scroll
     var nav_container = $(".header");
     var nav = $(".header-second");
@@ -257,6 +260,8 @@ function calc_init() {
         }
     });
 });*/
+
+
 
 });
 
